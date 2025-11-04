@@ -1,0 +1,42 @@
+@reference "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen flex flex-col items-center;
+}
+
+@layer components {
+  .section {
+    @apply my-24 w-full text-center md:text-left;
+  }
+}
+
+
+@layer utilities {
+  .glow {
+    filter: drop-shadow(0 0 8px currentColor);
+  }
+}
+
+@keyframes softGlow {
+  0%, 100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.square-glow {
+  animation: softGlow 5s ease-in-out infinite;
+}
+
