@@ -40,3 +40,14 @@ body {
   animation: softGlow 5s ease-in-out infinite;
 }
 
+@media (max-width: 760px) {
+  .skill-mb {
+    max-width: 396px;
+  }
+
+  .abt-mb{
+    padding: 0 20px;
+  }
+  
+}
+

@@ -41,7 +41,7 @@ export default function Skills() {
     <section id="skills" className="section text-center overflow-hidden">
       <h2 className="text-3xl font-bold mb-10 text-primary">Skills</h2>
 
-      <div className="relative w-full">
+      <div className="relative w-full skill-mb">
         <div className="pointer-events-none absolute inset-0 z-20 bg-gradient-to-r from-black via-transparent to-black opacity-70" />
         <div className="overflow-hidden mb-10">
           <motion.div
