@@ -4,10 +4,9 @@ import Projects from "./Projects";
 
 export default function About() {
   return (
-    <section id="aboutme" className="py-20 pb-0 pt-2 text-gray-200 font-mono">
-      <div className="max-w-4xl mx-auto px-6"></div>
-      <div className="space-y-12">
-        <p className="text-gray-300 leading-relaxed text-lg abt-mb">
+    <section id="aboutme" className="py-20 pb-0 pt-2 text-gray-200 font-mono mb-about">
+      <div className="space-y-12 mb-about">
+        <p className="text-gray-300 leading-relaxed text-lg mb-abt-p">
           Hi, I’m <span className="font-semibold">Sudhir Kulat</span> — a
           passionate
           <strong> Full Stack Developer</strong> specializing in building

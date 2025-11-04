@@ -45,9 +45,19 @@ body {
     max-width: 396px;
   }
 
-  .abt-mb{
-    padding: 0 20px;
+  .mb-about{
+    padding-left: 1.3rem;
   }
+
+  .mb-abt-p{
+    padding: 0 24px;
+  }
+  .mb-nav{
+    max-width: 400px;
+    overflow-x: scroll;
+    padding-left: 2rem;
+    justify-content: normal;
+  } 
   
 }
 

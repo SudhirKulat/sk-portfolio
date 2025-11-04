@@ -106,7 +106,7 @@ export default function ProfileTabs() {
         </motion.p>
       </motion.div>
 
-      <nav className="mb-6 flex justify-center gap-8 border-b border-gray-800 pb-3">
+      <nav className="mb-6 flex justify-center gap-8 border-b border-gray-800 pb-3 mb-nav">
         {tabs.map((tab) => (
           <a
             key={tab}
