@@ -50,7 +50,7 @@ export default function Experience() {
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.3 }}
               className="mb-12 ml-6 relative"
             >
               <span className="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-gray-900 border border-gray-600 rounded-full">
