@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaLinkedin,
@@ -19,18 +19,11 @@ export default function ProfileTabs() {
   const [activeTab, setActiveTab] = useState("About Me");
   const typedName = useTypingEffect("Sudhir Kulat", 120);
 
-  const renderContent = () => {
-    switch (activeTab) {
-      case "About Me":
-        return <About />;
-      case "Experience":
-        return <Experience />;
-      case "Education":
-        return <Education />;
-      case "Blogs":
-        return <Blogs />;
-      default:
-        return null;
+  const handleClick = (tab: string) => {
+    setActiveTab(tab);
+    const section = document.getElementById(tab.toLowerCase());
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -51,7 +44,6 @@ export default function ProfileTabs() {
           transition={{ delay: 0.2, duration: 0.6 }}
         />
 
- 
         <motion.h1
           className="text-4xl md:text-5xl font-bold text-primary mt-2 mb-0"
           initial={{ opacity: 0 }}
@@ -64,7 +56,6 @@ export default function ProfileTabs() {
             key={typedName.length}
           />
         </motion.h1>
-
 
         <div className="flex items-center justify-center gap-6 text-2xl text-gray-400 mt-3">
           <a
@@ -110,7 +101,7 @@ export default function ProfileTabs() {
         {tabs.map((tab) => (
           <a
             key={tab}
-            onClick={() => setActiveTab(tab)}
+            onClick={() => handleClick(tab)}
             className={`cursor-pointer relative text-xl font-medium transition-colors ${
               activeTab === tab
                 ? "text-primary"
@@ -137,7 +128,10 @@ export default function ProfileTabs() {
           transition={{ duration: 0.4 }}
           className="text-left"
         >
-          {renderContent()}
+          <About />
+          <Experience />
+          <Education />
+          <Blogs />
         </motion.div>
       </AnimatePresence>
     </section>
