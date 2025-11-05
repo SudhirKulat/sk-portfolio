@@ -1,5 +1,6 @@
 "use client";
 
+import { Calendar } from "lucide-react";
 import ReadMore from "./ReadMore";
 import Reveal from "./Reveal";
 
@@ -9,16 +10,19 @@ const projects = [
     desc: "Cortex is a platform used by Deloitte Data Specialists and Auditors to assist their clients by analyzing their financial data, identifying patterns, and detecting hazards such as fraudulent inputs or transactions that exceed an ideal threshold value. Platform has diﬀerent modules which are built using React js which consumes API which are developed on .NET core and azure services. Cortex is in charge of extracting client data from diﬀerent client data sources (ERP systems such as SAP, Oracle, and Sailpoint), modeling the data, cleaning it up, and then creating actionable output in the form of spreadsheets or data visualizations that can be utilized for audit purposes.",
     tech: ["React", "Redux", "Enzyme", ".NET CORE", "Azure services"],
     organization: "Deloitte",
+    duration: "2022-Present",
   },
   {
     title: "Connext",
     desc: "Connext is an application used by agent and agency for handling policies of customers. This appliaction provides admin dashboard for managing the policy preference for users",
     tech: ["React", "Redux", "Typescript", "Java", "AWS"],
+    duration: "2021-2022",
     organization: "Mphasis",
   },
   {
     title: "Open Access Funding",
     desc: "Platform for publishing and paying the research artical",
+    duration: "2018-2021",
     tech: [
       "Velocity template",
       "CSS",
@@ -27,12 +31,13 @@ const projects = [
       "Oracle",
       "Spring Boot",
     ],
-    organization: "SpringerNature",
+    organization: "Springer Nature",
   },
   {
     title: "Macmillan Education Australlia",
     desc: "Online e-commerce web application for selling educational books in AU and NZ",
-    organization: "SpringerNature",
+    organization: "Springer Nature",
+    duration: "2017-2018",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "Java", "Spring Boot"],
   },
 ];
@@ -46,10 +51,16 @@ export default function Projects() {
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((proj, i) => (
           <Reveal key={i} delay={i * 0.2}>
-            <div className="bg-secondary rounded-2xl p-6 shadow-md hover:shadow-primary/10 transition hover:scale-105">
-              <h3 className="text-xl font-semibold mb-2 text-[#2AB5B5]">
-                {proj.title}
-              </h3>
+            <div className="bg-secondary rounded-2xl  p-6 pl-0 shadow-md hover:shadow-primary/10 transition hover:scale-105">
+              <div className="flex justify-between items-center mb-2">
+                <h3 className="text-xl font-semibold mb-2 text-[#2AB5B5]">
+                  {proj.title}
+                </h3>
+                <span className="flex items-center text-sm text-gray-400">
+                  <Calendar className="w-4 h-4 mr-1" /> {proj?.duration}
+                </span>
+              </div>
+
               <h3 className="text-xs font-semibold mb-2">
                 {proj.organization}
               </h3>

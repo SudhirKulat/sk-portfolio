@@ -85,7 +85,7 @@ export default function ProfileTabs() {
             <FaGithub />
           </a>
           <a
-            href="www.linkedin.com/in/sudhir-kulat007"
+            href="https://linkedin.com/in/sudhir-kulat007"
             target="_blank"
             className="hover:text-primary transition-colors"
             aria-label="LinkedIn"

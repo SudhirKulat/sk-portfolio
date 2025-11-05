@@ -7,15 +7,15 @@ const experiences = [
   {
     company: "Globant",
     role: "Senior Web UI Developer",
-    period: "2022 – Present",
+    period: "APR 2022 – Present",
     description:
       "Leading the UI team, building scalable web apps with React, Next.js, and Tailwind. Focused on performance optimization and developer experience.",
     tech: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
   },
   {
-    company: "Emphasis",
+    company: "Ephasis",
     role: "Senior Software Engineer",
-    period: "2021 – 2022",
+    period: "FEB 2021 – MAR 2022",
     description:
       "Developed data-driven dashboards and internal tools for enterprise clients. Implemented reusable component systems and improved UX consistency.",
     tech: ["React", "Redux", "SASS", "Chart.js"],
@@ -23,7 +23,7 @@ const experiences = [
   {
     company: "Springer Nature",
     role: "Fullstack developer",
-    period: "2017 – 2021",
+    period: "MAR 2017 – JAN 2021",
     description:
       "Built and maintained responsive UI for multiple client-facing projects. Collaborated with designers to bring high-fidelity prototypes to life.",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "Java", "Spring Boot"],
