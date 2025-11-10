@@ -53,7 +53,7 @@ export default function Experience() {
               viewport={{ once: true, amount: 0.3 }}
               className="mb-12 ml-6 relative"
             >
-              <span className="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-gray-900 border border-gray-600 rounded-full">
+              <span className="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-gray-900 border border-gray-600 rounded-full z-1">
                 <Briefcase className="w-3 h-3 text-gray-400" />
               </span>
 
