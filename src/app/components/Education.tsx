@@ -45,7 +45,7 @@ export default function Education() {
               viewport={{ once: true }}
               className="mb-12 ml-6 relative"
             >
-              <span className="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-gray-900 border border-gray-600 rounded-full Z-1">
+              <span className="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-gray-900 border border-gray-600 rounded-full z-1">
                 <GraduationCap className="w-3 h-3 text-gray-400" />
               </span>
 
