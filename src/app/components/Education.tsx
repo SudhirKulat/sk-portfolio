@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Briefcase, Calendar } from "lucide-react";
+import { GraduationCap, Calendar } from "lucide-react";
 
 const education = [
   {
@@ -46,7 +46,7 @@ export default function Education() {
               className="mb-12 ml-6 relative"
             >
               <span className="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-gray-900 border border-gray-600 rounded-full">
-                <Briefcase className="w-3 h-3 text-gray-400" />
+                <GraduationCap className="w-3 h-3 text-gray-400 z-1" />
               </span>
 
               <div className="bg-[#0e0e0e]/70 backdrop-blur-md border border-gray-800 hover:border-gray-600 rounded-xl p-5 transition-all duration-500">
